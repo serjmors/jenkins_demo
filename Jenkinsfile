@@ -3,21 +3,25 @@ pipeline {
   stages {
     stage('Stage 1') {
       steps {
-        echo 'Step 1'
-        echo 'Step 2'
-        echo 'Step 3'
+        echo 'Stage 1 / Step 1'
+        echo 'Stage1 / Step 2'
+        echo 'Stage 1 / Step 3'
       }
     }
 
-    stage('Test') {
+    stage('Stage 2') {
       steps {
-        echo 'Testing..'
+        echo 'Stage 2 / Step 1'
+        echo 'Stage 2 / Step 2'
       }
     }
 
-    stage('Deploy') {
+    stage('Stage 3') {
       steps {
-        echo 'Deploying....'
+        echo 'Stage 3 / Step 1'
+        echo 'Stage 3 / Step 2'
+        echo 'Stage 3 / Step 3'
+        echo 'Stage 3 / Step 4'
       }
     }
 
